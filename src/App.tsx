@@ -16,15 +16,15 @@ class App extends Component<{}, IState> {
     const { counter, name } = this.state
     return (
       <div>
-        <Form onFormSubmit={this.onFormSubmit}>
+        {/* <Form onFormSubmit={this.onFormSubmit}>
           <Input value={name} onChange={this.onChange} />
-        </Form>
+        </Form> */}
         <Number count={counter} /> <button onClick={this.add}>Add</button>
       </div>
     );
   }
   onChange = (event:React.SyntheticEvent<HTMLInputElement>) => {
-    console.log(event.target);
+    
   }
 
   onFormSubmit = (event: React.FormEvent) => {
